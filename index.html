@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Project</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="gallery"> <!--TODO Add onclick event listener for figures-->
+            <figure class="gallery__item gallery__item--1" id="fig1" onclick="event.stopPropagation(); getPainting(this.id, event)">
+                <img class="gallery__img" src="images/The-Old-Guitarist-Picasso.jpg" alt="The Old Guitarist Pablo Picasso">
+                <h4 id="picasso"></h4>
+            </figure>
+
+            <figure class="gallery__item gallery__item--2" id="fig2" onclick="event.stopPropagation(); getPainting(this.id, event)">
+                <img class="gallery__img" src="images/The-bedroom-VanGogh.jpg" alt="The Bedroom Vincent VanGogh">
+                <h4 id="vangogh"></h4>
+            </figure>
+
+            <figure class="gallery__item gallery__item--3" id="fig3" onclick="event.stopPropagation(); getPainting(this.id, event)">
+                <img class="gallery__img" src="images/The-Red-Armchair-Picasso.jpg" alt="The Red Armchair Pablo Picasso">
+                <h4 id="pablo"></h4>
+            </figure>
+
+            <figure class="gallery__item gallery__item--4" id="fig4" onclick="event.stopPropagation(); getPainting(this.id, event)">
+                <img class="gallery__img" src="images/The-Earth-is-a-man-Matta.jpg" alt="The Earth is a Man Roberto Matta">
+                <h4 id="matta"></h4>
+            </figure>
+        </div>
+        <div class="buttoncontainer">
+            <button onClick="window.location.reload();">Clear</button> <!--TODO Add onclick event listener-->
+        </div>
+    </div>
+    
+</body>
+</html>
